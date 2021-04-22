@@ -5,10 +5,14 @@ body{
   padding:0;
   background-color: #deeaee;
 }
+html{
+  font-size: 62.5%;
+}
 #container{
-  width: 60px;
-  height: 384px;
-  min-width:10px;
+  width: 6rem;
+  height: 38.4rem;
+  min-width:80rem;
+  float: left;
   position: relative;
   margin: 0 auto;
 }
@@ -16,13 +20,13 @@ body{
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 10%; /* Full-width */
-  height: 15px; /* Specified height */
+  height: 1.5rem; /* Specified height */
   background: #deeaee; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 .slider:hover {
   opacity: 100; /* Fully shown on mouse-over */
@@ -30,14 +34,14 @@ body{
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 15px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  width: 1.5rem; /* Set a specific slider handle width */
+  height: 2.5rem; /* Slider handle height */
   background: #BE3C76;
   cursor: pointer; /* Cursor on hover */
 }
 .s1{
   color:#deeaee;
-  font-size: 20px;
+  font-size: 2rem;
   font-style:italic;
   margin-top: -3%;
   margin-left: 2%;
@@ -45,18 +49,32 @@ body{
 .s2{
   color:#deeaee;
   font-style:italic;
-  font-size: 20px;
+  font-size: 2rem;
   margin-left: 2%;
 }
 nav{
   background: #133748;
-  height: 150px;
+  height: 15rem;
   width: 100%;
-  -webkit-box-shadow: 0 14px 10px -10px #999;
-    -moz-box-shadow: 0 14px 10px -10px #999;
-    box-shadow: 0 14px 10px -10px #999;
+  -webkit-box-shadow: 0 1.4rem 1rem -1rem #999;
+    -moz-box-shadow: 0 1.4rem 1rem -1rem #999;
+    box-shadow: 0 1.4rem 1rem -1rem #999;
+}
+@media (max-width:998px) {
+  html{
+    font-size: 55%;
+  }
 }
 
+
+@media (max-width:768px) {
+  html{
+    font-size: 45%;
+  }
+}
+nav ul .btn{
+  font-size: 1.4rem;
+}
 nav ul button{
   margin-left: -1%;
   background-color:  #deeaee;
@@ -64,20 +82,20 @@ nav ul button{
   font-family:sans-serif;
 }
 nav ul{
-  margin-top: 50px;
+  margin-top: 5rem;
   float: right;
 }
 label{
-  margin-top: 20px;
+  margin-top: 2rem;
   font-family:cursive;
-  margin-left: 650px;
+  margin-left: 65rem;
   color:  #deeaee;
-  font-size: 50px;
+  font-size: 5rem;
 }
 .arrayBar{
   object-fit: cover;
   margin-left: 3%;
-  width: 18px;
+  width: 1.8rem;
   position: absolute;
   background-color:  #BB8BB3;
   transition: 0.2s all ease

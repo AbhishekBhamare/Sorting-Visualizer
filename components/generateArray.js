@@ -6,7 +6,7 @@ function generateArray() {
     array.push(val);
     const arrayBar = document.createElement("div");
     arrayBar.classList.add("arrayBar");
-    arrayBar.style.height = `${val * 8}px`;
+    arrayBar.style.height = `${val * 6}px`;
     arrayBar.style.width = `${1/size * 980}px`
     arrayBar.style.transform = `translateX(${i * 1/size * 1300}px)`;
     container.appendChild(arrayBar);
