@@ -1,0 +1,90 @@
+body{
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  margin:0;
+  padding:0;
+  background-color: #deeaee;
+}
+#container{
+  width: 60px;
+  height: 384px;
+  min-width:10px;
+  position: relative;
+  margin: 0 auto;
+}
+.slider{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 10%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: #deeaee; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 100px;
+}
+.slider:hover {
+  opacity: 100; /* Fully shown on mouse-over */
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #BE3C76;
+  cursor: pointer; /* Cursor on hover */
+}
+.s1{
+  color:#deeaee;
+  font-size: 20px;
+  font-style:italic;
+  margin-top: -3%;
+  margin-left: 2%;
+}
+.s2{
+  color:#deeaee;
+  font-style:italic;
+  font-size: 20px;
+  margin-left: 2%;
+}
+nav{
+  background: #133748;
+  height: 150px;
+  width: 100%;
+  -webkit-box-shadow: 0 14px 10px -10px #999;
+    -moz-box-shadow: 0 14px 10px -10px #999;
+    box-shadow: 0 14px 10px -10px #999;
+}
+
+nav ul button{
+  margin-left: -1%;
+  background-color:  #deeaee;
+  display:flex;
+  font-family:sans-serif;
+}
+nav ul{
+  margin-top: 50px;
+  float: right;
+}
+label{
+  margin-top: 20px;
+  font-family:cursive;
+  margin-left: 650px;
+  color:  #deeaee;
+  font-size: 50px;
+}
+.arrayBar{
+  object-fit: cover;
+  margin-left: 3%;
+  width: 18px;
+  position: absolute;
+  background-color:  #BB8BB3;
+  transition: 0.2s all ease
+}
+ul .btn:hover{
+  background-color: #89A8B1;
+}
+ul .btn{
+  color:  #deeaee;
+}
