@@ -46,4 +46,5 @@ async function InsertionSort(){
       }, delay)
     );
   }
+  Enable();
 }

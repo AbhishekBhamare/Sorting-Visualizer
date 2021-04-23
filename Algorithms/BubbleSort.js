@@ -41,4 +41,5 @@ async function BubbleSort(){
       bars[bars.length-i-1].style.backgroundColor = "#13C366";
     }
     bars[0].style.backgroundColor = "#13C366";
+    Enable();
 }

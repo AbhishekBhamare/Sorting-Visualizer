@@ -1,9 +1,10 @@
 async function MergeSort(){
-  Disable();
+   Disable();
    let bars = document.querySelectorAll(".arrayBar");
    let delay = updateDelay();
    delay = 501-delay;
    await merge_partition(bars,0, bars.length-1,delay);
+   Enable();
 }
 
 async function merge_sort(bars, start, mid, end,delay){
@@ -78,4 +79,5 @@ async function merge_partition(bars, start, end, delay){
      await merge_partition(bars, mid+1, end, delay);
     await merge_sort(bars, start, mid, end, delay);
   }
+
 }

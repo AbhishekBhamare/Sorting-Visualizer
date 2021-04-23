@@ -36,4 +36,5 @@ async function SelectionSort() {
     }
     bars[i].style.backgroundColor = "#13C366";
   }
+  Enable();
 }

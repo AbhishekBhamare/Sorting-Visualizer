@@ -12,6 +12,7 @@ async function Solve(bars, low, high, delay){
     await Solve(bars, low, pi-1, delay);
     await Solve(bars, pi+1, high, delay);
   }
+  Enable();
 }
 
 async function partition(bars, low, high, delay){
