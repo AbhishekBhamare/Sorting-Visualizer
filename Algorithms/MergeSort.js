@@ -1,10 +1,7 @@
-function getDelay() {
-  var x = document.getElementById("myRange");
-  return x.value;
-}
 async function MergeSort(){
+  Disable();
    let bars = document.querySelectorAll(".arrayBar");
-   delay = getDelay();
+   let delay = updateDelay();
    delay = 501-delay;
    await merge_partition(bars,0, bars.length-1,delay);
 }

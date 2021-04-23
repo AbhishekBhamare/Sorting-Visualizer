@@ -1,10 +1,6 @@
-function getDelay() {
-  var x = document.getElementById("myRange");
-  return x.value;
-}
-
 async function SelectionSort() {
-  let delay = getDelay();
+  Disable();
+  let delay = updateDelay();
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
    for (var i=0; i<bars.length; i++) {

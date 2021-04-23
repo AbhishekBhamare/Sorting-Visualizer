@@ -1,10 +1,7 @@
-function getDelay() {
-  var x = document.getElementById("myRange");
-  return x.value;
-}
-
 async function BubbleSort(){
-  let delay = getDelay();
+  Disable();
+  let delay = updateDelay();
+  console.log(delay);
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
 

@@ -1,10 +1,6 @@
-function getDelay() {
-  var x = document.getElementById("myRange");
-  return x.value;
-}
-
 async function QuickSort(){
-  let delay = getDelay();
+  Disable();
+  let delay = updateDelay();
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
    Solve(bars, 0, bars.length-1, delay);

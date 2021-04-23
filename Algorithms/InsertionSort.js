@@ -1,9 +1,6 @@
-function getDelay() {
-  var x = document.getElementById("myRange");
-  return x.value;
-}
 async function InsertionSort(){
-  let delay = getDelay();
+  Disable();
+  let delay = updateDelay();
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
   let key,j;
