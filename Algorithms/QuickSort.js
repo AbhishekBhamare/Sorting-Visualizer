@@ -1,21 +1,19 @@
 async function QuickSort(){
   Disable();
-  delay = updateDelay();
-  delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
-   Solve(bars, 0, bars.length-1, delay);
+   Solve(bars, 0, bars.length-1,);
 }
 
-async function Solve(bars, low, high, delay){
+async function Solve(bars, low, high){
   if(low <= high){
-    var pi = await partition(bars, low, high,delay);
-    await Solve(bars, low, pi-1, delay);
-    await Solve(bars, pi+1, high, delay);
+    var pi = await partition(bars, low, high);
+    await Solve(bars, low, pi-1,);
+    await Solve(bars, pi+1, high,);
   }
   Enable();
 }
 
-async function partition(bars, low, high, delay){
+async function partition(bars, low, high){
   let pivot = parseInt(bars[high].style.height, 10);
   let pIndex = low-1;
 
@@ -23,7 +21,7 @@ async function partition(bars, low, high, delay){
   await new Promise((resolve) =>
     setTimeout(() => {
       resolve();
-    }, delay)
+    },delay)
   );
 
   for(let i=low; i<=high-1; ++i){
@@ -31,7 +29,7 @@ async function partition(bars, low, high, delay){
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
-      }, delay)
+      },delay)
     );
 
     if(parseInt(bars[i].style.height, 10) < pivot){
@@ -39,9 +37,9 @@ async function partition(bars, low, high, delay){
       let temp1 = bars[i].style.height;
       bars[i].style.height = bars[pIndex].style.height;
       bars[pIndex].style.height = temp1;
-      bars[i].style.backgroundColor = "#BB8BB3";
+      bars[i].style.backgroundColor = "#133748";
     }else{
-      bars[i].style.backgroundColor = "#BB8BB3";
+      bars[i].style.backgroundColor = "#133748";
     }
   }
   let temp2 =  bars[pIndex+1].style.height;
@@ -51,7 +49,7 @@ async function partition(bars, low, high, delay){
   await new Promise((resolve) =>
     setTimeout(() => {
       resolve();
-    }, delay)
+    },delay)
   );
   return pIndex+1;
 }
