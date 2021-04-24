@@ -11,18 +11,18 @@
     <label>Sorting Visualizer</label>
 
     <ul>
-      <button class="btn" id="Button1" onclick="generateArray()">Randomize Array</button>
       <button class="btn" id="Button2" onclick="SelectionSort()">Selection Sort</button>
       <button class="btn" id="Button3" onclick="BubbleSort()">Bubble Sort</Button>
       <button class="btn" id="Button4" onclick="InsertionSort()">Insertion Sort</button>
       <button class="btn" id="Button5" onclick="QuickSort()">Quick Sort</button>
       <button class="btn" id="Button6" onclick="MergeSort()">Merge Sort</button>
+      <button class="btn" id="Button1" onclick="generateArray()">Randomize</button>
     </ul>
-    <p class="s1">Move slider to change Size:-
+    <p class="s1">Size -:  min
         <input type="range" id="sizeRange" min=10 max=250 step=1 value=10 onchange="updateArraySize(this.value);" oninput="updateArraySize(this.value)" class="slider">
-        more bars
+        max
     </p>
-    <p class="s2">Move slider to change Speed:-
+    <p class="s2">Speed -:  Slower
       <input type="range" id="myRange" min=1 max=500 step=1 value=100 onchange="updateDelay(this.value);" oninput="updateDelay(this.value)"  class="slider">
       faster
     <p>

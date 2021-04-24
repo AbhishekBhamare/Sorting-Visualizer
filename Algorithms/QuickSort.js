@@ -9,8 +9,10 @@ async function Solve(bars, low, high){
     var pi = await partition(bars, low, high);
     await Solve(bars, low, pi-1,);
     await Solve(bars, pi+1, high,);
+  }else if(bars.length == low){
+    Enable();
   }
-  Enable();
+
 }
 
 async function partition(bars, low, high){
