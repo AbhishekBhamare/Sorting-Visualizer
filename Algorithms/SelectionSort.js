@@ -1,6 +1,6 @@
 async function SelectionSort() {
   Disable();
-  let delay = updateDelay();
+  delay = updateDelay();
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
    for (var i=0; i<bars.length; i++) {

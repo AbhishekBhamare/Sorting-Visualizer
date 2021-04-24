@@ -1,6 +1,6 @@
 async function QuickSort(){
   Disable();
-  let delay = updateDelay();
+  delay = updateDelay();
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
    Solve(bars, 0, bars.length-1, delay);

@@ -1,6 +1,6 @@
 async function BubbleSort(){
   Disable();
-  let delay = updateDelay();
+  delay = updateDelay();
   console.log(delay);
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");

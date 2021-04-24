@@ -1,6 +1,6 @@
 async function InsertionSort(){
   Disable();
-  let delay = updateDelay();
+  delay = updateDelay();
   delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
   let key,j;

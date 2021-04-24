@@ -1,7 +1,7 @@
 async function MergeSort(){
    Disable();
    let bars = document.querySelectorAll(".arrayBar");
-   let delay = updateDelay();
+   delay = updateDelay();
    delay = 501-delay;
    await merge_partition(bars,0, bars.length-1,delay);
    Enable();
