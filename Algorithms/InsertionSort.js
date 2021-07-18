@@ -1,7 +1,5 @@
 async function InsertionSort(){
   Disable();
-  let delay = updateDelay();
-  delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
   let key,j;
   bars[0].style.backgroundColor = "orange";
@@ -28,7 +26,7 @@ async function InsertionSort(){
         }, delay)
       );
       for(let k=i; k>=0; --k){
-        bars[k].style.backgroundColor = "#BB8BB3";
+        bars[k].style.backgroundColor = "#133748";
       }
     }
     bars[j+1].style.height = String(key)+"px";

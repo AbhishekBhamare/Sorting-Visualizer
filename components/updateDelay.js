@@ -1,4 +1,4 @@
-function updateDelay() {
-  var x = document.getElementById("myRange");
-  return x.value;
+function updateDelay(val) {
+ val  = 501-val
+ delay = val;
 }

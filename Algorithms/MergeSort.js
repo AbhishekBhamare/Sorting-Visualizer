@@ -1,13 +1,11 @@
 async function MergeSort(){
    Disable();
    let bars = document.querySelectorAll(".arrayBar");
-   let delay = updateDelay();
-   delay = 501-delay;
-   await merge_partition(bars,0, bars.length-1,delay);
+   await merge_partition(bars,0, bars.length-1);
    Enable();
 }
 
-async function merge_sort(bars, start, mid, end,delay){
+async function merge_sort(bars, start, mid, end){
   let arr=[],i=start, j=mid+1,k=0;
   while(i<=mid && j<=end){
     bars[i].style.backgroundColor = "#EF3F3F";
@@ -15,9 +13,8 @@ async function merge_sort(bars, start, mid, end,delay){
     await new Promise((resolve) =>
           setTimeout(() => {
             resolve();
-          }, delay)
+          },delay)
         );
-      console.log(delay);
       arr[k++] = parseInt(bars[i].style.height, 10);
       arr[k++] = parseInt(bars[j].style.height, 10);
       ++i;
@@ -28,7 +25,7 @@ async function merge_sort(bars, start, mid, end,delay){
     await new Promise((resolve) =>
           setTimeout(() => {
             resolve();
-          }, delay)
+          },delay)
         );
     arr[k++] = parseInt(bars[i].style.height, 10);
     ++i;
@@ -38,7 +35,7 @@ async function merge_sort(bars, start, mid, end,delay){
     await new Promise((resolve) =>
           setTimeout(() => {
             resolve();
-          }, delay)
+          },delay)
         );
         arr[k++] = parseInt(bars[j].style.height, 10);
         ++j;
@@ -54,12 +51,12 @@ async function merge_sort(bars, start, mid, end,delay){
     await new Promise((resolve) =>
           setTimeout(() => {
             resolve();
-          }, delay)
+          },delay)
         );
   }
 
 }
-async function merge_partition(bars, start, end, delay){
+async function merge_partition(bars, start, end){
   if(start<end){
     let mid=Math.floor((start+end)/2);
     bars[mid].style.backgroundColor = "orange";
@@ -68,16 +65,16 @@ async function merge_partition(bars, start, end, delay){
            resolve();
          }, delay)
        );
-    bars[mid].style.backgroundColor = "#BB8BB3";
+    bars[mid].style.backgroundColor = "#133748";
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
       }, delay)
     );
 
-    await merge_partition(bars, start, mid, delay);
-     await merge_partition(bars, mid+1, end, delay);
-    await merge_sort(bars, start, mid, end, delay);
+    await merge_partition(bars, start, mid);
+     await merge_partition(bars, mid+1, end);
+    await merge_sort(bars, start, mid, end);
   }
 
 }

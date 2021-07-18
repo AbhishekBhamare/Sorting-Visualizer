@@ -1,7 +1,5 @@
 async function SelectionSort() {
   Disable();
-  let delay = updateDelay();
-  delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
    for (var i=0; i<bars.length; i++) {
 
@@ -29,9 +27,9 @@ async function SelectionSort() {
             resolve();
           }, delay)
         );
-        bars[j].style.backgroundColor = "#BB8BB3";
+        bars[j].style.backgroundColor = "#133748";
       }else{
-        bars[j].style.backgroundColor = "#BB8BB3";
+        bars[j].style.backgroundColor = "#133748";
       }
     }
     bars[i].style.backgroundColor = "#13C366";

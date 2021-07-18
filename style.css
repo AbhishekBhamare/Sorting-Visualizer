@@ -1,5 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@media (-webkit-device-pixel-ratio: 1.25) {
+  * {
+    zoom: 0.97;
+  }
+}
+@media (-webkit-device-pixel-ratio: 1.10) {
+  * {
+    zoom:0.9;
+  }
+}
+@media (-webkit-device-pixel-ratio: 1.00) {
+  * {
+    zoom: 1.01;
+  }
+}
+@media (-webkit-device-pixel-ratio: 1.50) {
+  * {
+    zoom: 0.934;
+  }
+}
+@media (-webkit-device-pixel-ratio: 1.75) {
+  * {
+    zoom: 0.89;
+  }
+}
+@media (-webkit-device-pixel-ratio: 2.00) {
+  * {
+    zoom: 0.87;
+  }
+}
+
 body{
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  /* overflow-y: hidden; /* Hide vertical scrollbar
   overflow-x: hidden; /* Hide horizontal scrollbar */
   margin:0;
   padding:0;
@@ -17,110 +50,83 @@ html{
   position: relative;
   margin: 0 auto;
 }
-.slider{
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 10%; /* Full-width */
-  height: 1.5rem; /* Specified height */
-  background: #deeaee; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-  border-radius: 10rem;
-}
-.slider:hover {
-  opacity: 100; /* Fully shown on mouse-over */
-}
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 1.5rem; /* Set a specific slider handle width */
-  height: 2.5rem; /* Slider handle height */
-  background: #BE3C76;
-  cursor: pointer; /* Cursor on hover */
-}
-.s1{
-  color:#deeaee;
-  font-size: 2rem;
-  font-style:italic;
-  margin-top: -3%;
-  margin-left: 2%;
-}
-.s2{
-  color:#deeaee;
-  font-style:italic;
-  font-size: 2rem;
-  margin-left: 2%;
+.arrayBar{
+  object-fit: cover;
+  margin-left: 3%;
+  width: 1.8rem;
+  position: absolute;
+  background-color:  #133748;
+  transition: 0.2s all ease
 }
 nav{
-  background: #133748;
+  background-image: linear-gradient(#133748, black);
+
   height: 15rem;
   width: 100%;
   -webkit-box-shadow: 0 1.4rem 1rem -1rem #999;
     -moz-box-shadow: 0 1.4rem 1rem -1rem #999;
     box-shadow: 0 1.4rem 1rem -1rem #999;
 }
-@media (-webkit-device-pixel-ratio: 1.25) {
-  * {
-    zoom: 0.97;
-  }
-}
-@media (-webkit-device-pixel-ratio: 1.00) {
-  * {
-    zoom: 1.01;
-  }
-}
-@media (-webkit-device-pixel-ratio: 1.50) {
-  * {
-    zoom: 0.934;
-  }
+nav label{
+   margin-left: 30%;
+   margin-top: 1.9%;
+   color: #deeaee;
+   font-size: 5rem;
+   font-family: 'Tahoma' sans-serif;
 }
 
-
-/* @media (max-width:998px) {
-  html{
-    font-size: 55%;
-  }
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.5rem; /* Set a specific slider handle width */
+  height: 2.5rem; /* Slider handle height */
+  background: purple;
+  cursor: pointer; /* Cursor on hover */
 }
 
+ .s1{
+  color:#deeaee;
+  font-size: 2rem;
+  font-style:italic;
+  margin-top: -4%;
+  margin-left: 2%;
+}
 
-@media (max-width:768px) {
-  html{
-    font-size: 45%;
-  }
-} */
-nav ul .btn{
-  font-size: 1.4rem;
-}
-nav ul button{
-  margin-left: -1%;
-  background-color:  #deeaee;
-  display:flex;
-  font-family:sans-serif;
-}
-nav ul{
-  margin-top: 5rem;
-  float: right;
-}
-label{
-  margin-top: 2rem;
-  font-family:cursive;
-  margin-left: 65rem;
-  color:  #deeaee;
-  font-size: 5rem;
-}
-.arrayBar{
-  object-fit: cover;
-  margin-left: 3%;
-  width: 1.8rem;
-  position: absolute;
-  background-color:  #BB8BB3;
-  transition: 0.2s all ease
-}
-ul .btn:hover{
-  background-color: #89A8B1;
+.s2{
+  color:#deeaee;
+  font-style:italic;
+  font-size: 2rem;
+  margin-left: 2%;
 }
 ul .btn{
+  margin-right: 0.79%;
+  margin-top: -1.819%;
+  font-size: 1.6rem;
+  float: right;
+  background-color: darkcyan;
   color:  #deeaee;
+}
+
+
+ul .btn:hover{
+  transform: scale(1.2);
+  color: white;
+}
+footer{
+  display: flex;
+  font-size: 15px;
+  font-weight:bolder;
+  padding-left: 10px;
+  align-items: center;
+  margin-top: 575px;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+}
+footer a{
+  padding: 10px;
+  color: inherit;
 }

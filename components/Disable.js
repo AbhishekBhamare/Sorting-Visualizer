@@ -1,5 +1,4 @@
 function Disable(){
-  document.getElementById("myRange").disabled = true;
   document.getElementById("sizeRange").disabled = true;
   document.getElementById("Button1").disabled = true;
   document.getElementById("Button2").disabled = true;

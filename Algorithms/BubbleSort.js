@@ -1,8 +1,5 @@
 async function BubbleSort(){
   Disable();
-  let delay = updateDelay();
-  console.log(delay);
-  delay = 501-delay;
   let bars = document.querySelectorAll(".arrayBar");
 
   for(let i=0; i<bars.length-1; ++i){
@@ -30,12 +27,12 @@ async function BubbleSort(){
             resolve();
           }, delay)
         );
-        bars[j].style.backgroundColor = "#BB8BB3";
-        bars[j+1].style.backgroundColor = "#BB8BB3";
+        bars[j].style.backgroundColor = "#133748";
+        bars[j+1].style.backgroundColor = "#133748";
       }
         else{
-          bars[j].style.backgroundColor = "#BB8BB3";
-          bars[j+1].style.backgroundColor = "#BB8BB3";
+          bars[j].style.backgroundColor = "#133748";
+          bars[j+1].style.backgroundColor = "#133748";
         }
       }
       bars[bars.length-i-1].style.backgroundColor = "#13C366";
